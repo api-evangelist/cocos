@@ -1,7 +1,18 @@
 aid: cocos
-name: Cocos
-description: Cocos is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Cocos Capital
+description: >-
+  Cocos Capital is an Argentine investech and online broker (ALyC, founded 2021
+  in Buenos Aires) offering a 100% digital investment platform for retail
+  investors. Through its mobile app and website, users open an account and trade
+  Argentine stocks, CEDEARs, sovereign and corporate bonds, mutual funds, the MEP
+  dollar, US stocks via an international account, and crypto, with a fast
+  onboarding experience aimed at making investing accessible to everyone
+  ("Invertir es para todos"). Cocos is registered as an ALyC and regulated by
+  Argentina's Comision Nacional de Valores (CNV), settles through the BYMA group,
+  and has surpassed 300,000 accounts. Cocos publishes no official public API for
+  developers; the client libraries that exist (e.g. pyCocos) are unofficial,
+  community-built and reverse-engineered from the app, so they are recorded here
+  as third-party and unsupported.
 url: https://raw.githubusercontent.com/api-evangelist/cocos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +20,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://app.cocos.capital/logo-512.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fintech
+- Investing
+- Brokerage
+- Trading
+- Capital Markets
+- Crypto
+- Argentina
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cocos-domain-security.yml
 - type: Website
-  url: https://combonetwork.io
+  url: https://cocos.capital
+- type: SignUp
+  url: https://app.cocos.capital
+- type: Login
+  url: https://app.cocos.capital
+- type: HelpCenter
+  url: https://cocos.capital/ayuda
+- type: Support
+  url: https://cocos.capital/ayuda
+- type: TermsOfService
+  url: https://cocos.capital/terminos
+- type: PrivacyPolicy
+  url: https://cocos.capital/privacy
+- type: Packages
+  url: packages/cocos-packages.yml
+- type: LLMsTxt
+  url: llms/cocos-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

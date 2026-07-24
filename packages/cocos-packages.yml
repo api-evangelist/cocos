@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/pycocos/
+description: >-
+  Client libraries for the Cocos Capital trading platform. Cocos Capital
+  publishes NO official/first-party SDK and no official public API. The only
+  maintained library found is pyCocos, an UNOFFICIAL, community-built Python
+  client that was reverse-engineered by web-scraping the Cocos Capital app; it is
+  not owned or supported by Cocos Capital. Recorded here as third-party
+  (official: false) with the HTTP status observed at fetch time (2026-07-18).
+  A second community client, testacode/cocos-capital-client, was found in search
+  results but both its GitHub repo and PyPI package now return 404 (removed), so
+  it is not listed as a live package.
+packages:
+  - language: python
+    registry: pypi
+    name: pyCocos
+    url: https://pypi.org/project/pycocos/
+    source: https://github.com/nacho-herrera/pyCocos
+    install: pip install pycocos
+    official: false
+    status: 200
+    note: >-
+      Unofficial, reverse-engineered Python client for Cocos Capital REST APIs.
+      Supports market data and order routing; authenticates with the app's web
+      API key plus TOTP (PyOTP) two-factor. Not owned or endorsed by Cocos
+      Capital.
